@@ -32,8 +32,9 @@ for div in list_containers:
     else:
         prices.append(np.nan)
 next_btn = soup.find('a', attrs={'data-pgno':'2'})
+
 print(next_btn)
 
 
 df = pd.DataFrame({'Product Name':products,'Price':prices,}) 
-df.to_csv('products.csv', index=False, encoding='utf-8')
+df.to_csv('Prafful_PyScrape.csv', index=False, encoding='utf-8')
